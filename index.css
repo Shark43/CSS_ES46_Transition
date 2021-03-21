@@ -1,0 +1,41 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+div.box{
+    width: 200px;
+    height: 100px;
+    background-color: #888;
+    margin: 10px;
+}
+#box1{
+    font-size: 8px;
+    overflow: hidden;
+    transition: width 3s, height 1s;
+}
+#box1:hover{
+    width: 700px;
+    height: 200px;
+}
+#box2{
+    transition-property: width,height, background-color,font-size, transform:;
+    transition-duration: 2s,2s,4s,2s,2s;
+    transition-delay: 2s,2s,0s,2s,6s;
+    text-align: center;
+}
+#box2:hover{
+    width: 300px;
+    height: 300px;
+    background-color: yellow;
+    font-size: 50px;
+    transform:rotate(180deg)
+}
+#box3{
+    transition: background-color 2s, transfrom 2s;
+    width: 50px;
+    height: 50px;
+}
+#box3:hover{
+    background-color: #00F;
+    transform: scale(2,2);
+}
